@@ -14,7 +14,7 @@ export function ToggleButton(props: ToggleButtonProps) {
       style={{
         cursor: "pointer",
         borderRadius: "1rem",
-        backgroundColor: "#f0f5fa",
+        backgroundColor: "#ced5db",
         width: "56px",
         height: "25px",
         padding: "3px 3px 3px 3px",
@@ -31,7 +31,7 @@ export function ToggleButton(props: ToggleButtonProps) {
           borderRadius: "1rem",
           width: "24px",
           height: "24px",
-          boxShadow: " 0px 1px 14px 0px rgba(0,0,0,0.75)",
+          boxShadow: " 0px 1px 14px 0px rgba(118, 110, 110, 0.75)",
         }}
       ></div>
     </div>

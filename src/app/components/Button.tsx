@@ -25,9 +25,9 @@ const btnPrimary: CSSProperties = {
 const btnSecondary: CSSProperties = {
   cursor: "pointer",
   borderRadius: "8px",
-  color: "white",
+  color: "#2e8de8",
 
-  border: "1px solid #ced9eb",
+  border: "1px solid #2e8de8",
   padding: ".25rem .25rem .25rem .25rem",
   width: "150px",
   height: "50px",
@@ -77,8 +77,6 @@ export function Button(props: ButtonProps) {
           break;
       }
     }
-
-    console.log(btnRef.current);
   }, [hover, isMouseDown, props.type]);
 
   return (
