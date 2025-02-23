@@ -35,6 +35,19 @@ const btnSecondary: CSSProperties = {
   backgroundColor: "unset",
 };
 
+const btnDanger: CSSProperties = {
+  cursor: "pointer",
+  borderRadius: "8px",
+  color: "#b56b86",
+
+  border: "1px solid #b56b86",
+  padding: ".25rem .25rem .25rem .25rem",
+  width: "150px",
+  height: "50px",
+  fontSize: "16px",
+  backgroundColor: "unset",
+};
+
 export function Button(props: ButtonProps) {
   const [hover, setHover] = useState(false);
   const [isMouseDown, setIsMouseDown] = useState(false);
@@ -50,6 +63,10 @@ export function Button(props: ButtonProps) {
       case "secondary":
         setBtn({ ...btnSecondary });
         btnRef.current = btnSecondary;
+        break;
+      case "danger":
+        setBtn({ ...btnDanger });
+        btnRef.current = btnDanger;
         break;
     }
   }, [props.type]);
