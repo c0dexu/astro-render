@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "./components/Button";
+import { ToggleButton } from "./components/ToggleButton";
 
 export default function Home() {
   return (
@@ -9,8 +10,14 @@ export default function Home() {
       style={{
         display: "flex",
         gap: "10px",
+        alignItems: "center",
       }}
     >
+      <ToggleButton
+        onToggle={(event) => {
+          console.log(event);
+        }}
+      ></ToggleButton>
       <Button
         onClick={() => {
           console.log("Saved succesfully!");
